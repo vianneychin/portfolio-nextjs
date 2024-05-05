@@ -112,6 +112,7 @@ function SocialLink({
 }
 
 function Newsletter() {
+  return
   return (
     <form
       action="/thank-you"
@@ -195,7 +196,7 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
+      company: 'Digital Media Management',
       title: 'Lead Full Stack Software Engineer',
       logo: dmmBrandLogo,
       start: '2019',
@@ -268,7 +269,7 @@ export default async function Home() {
             <span className="mr-2">👋</span>
             {`Hey there! I'm Vianney, a full stack software engineer based in Los Angeles,
             California. I'm currently working remotely as a Lead Full Stack Software Engineer at
-            Digital Media Management where I'm building interesting full stack web apps such as
+            Digital Media Management where I'm building interesting full stack web apps for a wide range of influencers and brands such as
             Creator Lab and Guideness.`}
           </p>
           <div className="mt-6 flex gap-6">
@@ -302,7 +303,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>

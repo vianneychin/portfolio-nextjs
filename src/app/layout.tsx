@@ -4,14 +4,15 @@ import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
+import types from 'tailwindcss'
 
 export const metadata: Metadata = {
   title: {
     template: '%s - Vianney Chin',
-    default: 'Vianney Chin - Software designer, founder, and amateur astronaut',
+    default: 'Vianney Chin - Full Stack Software Engineer',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    "I'm Vianney, a full stack software engineer based in Los Angeles, California. I'm currently working remotely as a Lead Full Stack Software Engineer at Digital Media Management where I'm building interesting full stack web apps for a wide range of influencers and brands such as Creator Lab and Guideness.",
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
