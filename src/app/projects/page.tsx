@@ -8,42 +8,45 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoGuideness from '@/images/logos/guideness.png'
+import logoCreatorLab from '@/images/logos/creatorlab.png'
+import logoFooodie from '@/images/logos/fooodie.png'
+import dmmLogo from '@/images/logos/dmm-logo.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Creator Lab',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Creator Lab is a technology platform that connects creators and popular brands to collaborative opportunities with other like-minded individuals and companies.',
+    link: { href: 'https://creatorlab.co/', label: 'creatorlab.co' },
+    logo: logoCreatorLab,
+    employer: 'Digital Media Management',
   },
   {
-    name: 'Animaginary',
+    name: 'Guideness',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Guideness is a home for experts, coaches, creators and their communities. These Guides specialize in holistic wellness, fitness, mindfulness, self-improvement and personal growth. ',
+    link: { href: 'https://guideness.co/', label: 'guideness.co' },
+    logo: logoGuideness,
+    employer: 'Digital Media Management',
   },
   {
-    name: 'HelioStream',
+    name: 'Internal AI Sentiment Analysis Tool',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'Internal tool used to track sentiment for large brands over big social media platforms  based on user and fandom comments. Automating data analysis work that would take weeks into several hours.',
+    logo: dmmLogo,
+    employer: 'Digital Media Management',
   },
   {
-    name: 'cosmOS',
+    name: 'Fooodiee',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'A Tinder-esque restaurant-matching app designed to help couples effortlessly decide on their next meal, eliminating disputes over dining choices. Swipe right on your next meal.',
+    link: {
+      href: 'https://apps.apple.com/us/app/fooodie/id1493362633',
+      label: 'apps.apple.com/fooodie',
+    },
+    logo: logoFooodie,
+    employer: 'Co-Creator',
   },
 ]
 
@@ -66,8 +69,8 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Major projects I've developed from the ground up that have made a significant impact."
+      intro="I've created an impact and worked on several projects at Digital Media Management. I've also developed personal projects that simplify my life and the lives of others."
     >
       <ul
         role="list"
@@ -84,13 +87,20 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link href={project.link ? project.link.href : ''}>
+                {project.name}
+              </Card.Link>
+              {project.employer && (
+                <p className="text-zinc-500">- {project.employer}</p>
+              )}
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
+            {project.link && (
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">{project.link.label}</span>
+              </p>
+            )}
           </Card>
         ))}
       </ul>

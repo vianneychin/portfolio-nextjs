@@ -14,7 +14,7 @@ import {
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import dmmBrandLogo from '@/images/logos/dmm-logo.jpg'
+import dmmBrandLogo from '@/images/logos/dmm-logo.png'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -160,7 +160,7 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-transparent">
         <Image
           layout={'fill'}
           objectFit={'contain'}
@@ -267,7 +267,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             <span className="mr-2">👋</span>
-            {`Hey there! I'm Vianney, a full stack software engineer based in Los Angeles,
+            {`Hey there! I'm Vianney  (vee-AH-nee), a full stack software engineer based in Los Angeles,
             California. I'm currently working remotely as a Lead Full Stack Software Engineer at
             Digital Media Management where I'm building interesting full stack web apps for a wide range of influencers and brands such as
             Creator Lab and Guideness.`}
@@ -297,11 +297,11 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div>
+          </div> */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
             <Resume />
