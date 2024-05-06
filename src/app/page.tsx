@@ -265,9 +265,9 @@ export default async function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Full Stack Software Engineer, coffee addict, gym rat, and gamer.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 max-w-[601px] text-base text-zinc-600 dark:text-zinc-400">
             <span className="mr-2">👋</span>
-            {`Hey there! I'm Vianney  (vee-AH-nee), a full stack software engineer based in Los Angeles,
+            {`Hey there! I'm Vianney  (vee-AH-nee), a full stack software engineer based in 🌴  Los Angeles,
             California. I'm currently working remotely as a Lead Full Stack Software Engineer at
             Digital Media Management where I'm building interesting full stack web apps for a wide range of influencers and brands such as
             Creator Lab and Guideness.`}
@@ -287,6 +287,11 @@ export default async function Home() {
               target="_blank"
               rel="noreferrer noopener"
             />
+            <h2 className="text-sm text-zinc-500 underline hover:text-zinc-300">
+              <a href="mailto: vianneyjchin@gmail.com">
+                vianneyjchin@gmail.com
+              </a>
+            </h2>
           </div>
         </div>
         <p className="mt-16 text-base text-zinc-600 dark:text-zinc-400">

@@ -34,6 +34,10 @@ const projects = [
     name: 'Internal AI Sentiment Analysis Tool',
     description:
       'Internal tool used to track sentiment for large brands over big social media platforms  based on user and fandom comments. Automating data analysis work that would take weeks into several hours.',
+    link: {
+      href: 'https://digitalmediamanagement.com',
+      label: 'digitalmediamanagement.com',
+    },
     logo: dmmLogo,
     employer: 'Digital Media Management',
   },
@@ -87,7 +91,11 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link ? project.link.href : ''}>
+              <Card.Link
+                target="_blank"
+                rel="noreferrer noopener"
+                href={project.link ? project.link.href : ''}
+              >
                 {project.name}
               </Card.Link>
               {project.employer && (
