@@ -256,8 +256,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
-
   return (
     <>
       <Container className="mt-9">
@@ -269,8 +267,7 @@ export default async function Home() {
             <span className="mr-2">👋</span>
             {`Hey there! I'm Vianney  (vee-AH-nee), a full stack software engineer based in 🌴  Los Angeles,
             California. I'm currently working remotely as a Lead Full Stack Software Engineer at
-            Digital Media Management where I'm building interesting full stack web apps for a wide range of influencers and brands such as
-            Creator Lab and Guideness.`}
+            Digital Media Management where I'm building a variety of full stack web apps.`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
