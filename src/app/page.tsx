@@ -277,13 +277,13 @@ export default async function Home() {
               target="_blank"
               rel="noreferrer noopener"
             />
-            <SocialLink
-              href="https://www.linkedin.com/in/vianneyjchin/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-              target="_blank"
-              rel="noreferrer noopener"
-            />
+            {/* <SocialLink */}
+            {/*   href="https://www.linkedin.com/in/vianneyjchin/" */}
+            {/*   aria-label="Follow on LinkedIn" */}
+            {/*   icon={LinkedInIcon} */}
+            {/*   target="_blank" */}
+            {/*   rel="noreferrer noopener" */}
+            {/* /> */}
             <h2 className="text-sm text-zinc-500 underline hover:text-zinc-300">
               <a href="mailto: vianneyjchin@gmail.com">
                 vianneyjchin@gmail.com
